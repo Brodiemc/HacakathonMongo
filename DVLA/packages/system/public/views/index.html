@@ -341,11 +341,47 @@ document.body.className = document.body.className.replace('no-js','');
                     <p class="info">Your postcode eg EH1 9SP</p>
                     <p></p>
 
+
+                    <style>
+                        .red-border{
+                        border: 1px solid red;
+                        }
+                    </style>
+
                     <p class="action group">
                         <script>
+
                         function sendDln() {
-                            var dln = document.getElementsByName('dln')[0].value
-                            window.location.href = "DVLAhack.htm?dln=" + dln;
+                        var validForm = 0;
+
+                          var dln = document.getElementsByName('dln')[0].value
+                          if (dln === "") {
+                          document.getElementById("dln").style.border="3px solid red";
+                          validForm += 1;
+                          } else {
+                          document.getElementById("dln").style.border="1px solid rgb(187, 187, 187)";
+                             }
+
+                           var nino = document.getElementsByName('nino')[0].value
+                          if (nino === "") {
+                          document.getElementById("nino").style.border="3px solid red";
+                          validForm += 1;
+                          } else {
+                          document.getElementById("nino").style.border="1px solid rgb(187, 187, 187)";
+                          }
+
+
+                            var postcode = document.getElementsByName('postcode')[0].value
+                          if (postcode === "") {
+                          document.getElementById("postcode").style.border="3px solid red";
+                          validForm += 1;
+                          } else {
+                          document.getElementById("postcode").style.border="1px solid rgb(187, 187, 187)";
+                          }
+
+                          if (validForm == 0) {
+                          window.location.href = "DVLAhack.htm?dln=" + dln;
+                          }
                         }
 
                         </script>

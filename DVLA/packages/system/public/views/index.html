@@ -228,8 +228,6 @@ document.body.className = document.body.className.replace('no-js','');
                 </div>
 
 
-                <form action="/driving-record/licence-number" method="POST" class="form-horizontal search-form"
-                      autocomplete="off" id="dlnSearchForm">
 
 
                     <div class="hide">
@@ -325,10 +323,17 @@ document.body.className = document.body.className.replace('no-js','');
                     <p></p>
 
                     <p class="action group">
-                        <a href="#" id="submitDln" class="button ">View record</a>
+                        <script>
+                        function sendDln() {
+                            var dln = document.getElementsByName('dln')[0].value
+                            window.location.href = "DVLAhack.htm?dln=" + dln;
+                        }
+
+                        </script>
+                        <input id="submitDln" onclick="sendDln();" class="button " type="submit" value="View record"></input>
+
                     </p>
 
-                </form>
 
                 <div>
                     <p>
@@ -380,7 +385,6 @@ document.body.className = document.body.className.replace('no-js','');
         </div>
     </div>
 </footer>
-
 
 <script type="text/javascript" data-main="/assets/javascripts-min/driverDetailsModule"
         src="../assets/js/driverDetailsModule.js"></script>

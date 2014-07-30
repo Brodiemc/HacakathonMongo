@@ -28,16 +28,16 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32258064" vertical-offset="1380" max-vertical-offset="7110">
-              <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.47280335" vertical-offset="5511" max-vertical-offset="7092">
+              <caret line="327" column="82" selection-start-line="327" selection-start-column="82" selection-end-line="327" selection-end-column="82" />
               <folding>
                 <element signature="tag#span#0;tag#div#3;tag#form#0;tag#div#1;tag#article#0;tag#main#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                <marker date="1406732853132" expanded="true" signature="574:601" placeholder="..." />
-                <marker date="1406732853132" expanded="true" signature="752:779" placeholder="..." />
-                <marker date="1406732853132" expanded="true" signature="930:957" placeholder="..." />
-                <marker date="1406732853132" expanded="true" signature="4519:4546" placeholder="..." />
-                <marker date="1406732853132" expanded="true" signature="4697:4756" placeholder="..." />
-                <marker date="1406732853132" expanded="true" signature="4907:4966" placeholder="..." />
+                <marker date="1406733442187" expanded="true" signature="576:603" placeholder="..." />
+                <marker date="1406733442187" expanded="true" signature="754:781" placeholder="..." />
+                <marker date="1406733442187" expanded="true" signature="932:959" placeholder="..." />
+                <marker date="1406733442187" expanded="true" signature="4443:4470" placeholder="..." />
+                <marker date="1406733442187" expanded="true" signature="4621:4680" placeholder="..." />
+                <marker date="1406733442187" expanded="true" signature="4831:4890" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -604,12 +604,12 @@
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="tag#span#0;tag#div#3;tag#form#0;tag#div#1;tag#article#0;tag#main#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <marker date="1406732853132" expanded="true" signature="574:601" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="752:779" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="930:957" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="4519:4546" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="4697:4756" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="4907:4966" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="576:603" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="754:781" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="932:959" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="4443:4470" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="4621:4680" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="4831:4890" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -630,18 +630,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/js/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="771">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32258064" vertical-offset="1380" max-vertical-offset="7110">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.47280335" vertical-offset="5511" max-vertical-offset="7092">
+          <caret line="327" column="82" selection-start-line="327" selection-start-column="82" selection-end-line="327" selection-end-column="82" />
           <folding>
             <element signature="tag#span#0;tag#div#3;tag#form#0;tag#div#1;tag#article#0;tag#main#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <marker date="1406732853132" expanded="true" signature="574:601" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="752:779" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="930:957" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="4519:4546" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="4697:4756" placeholder="..." />
-            <marker date="1406732853132" expanded="true" signature="4907:4966" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="576:603" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="754:781" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="932:959" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="4443:4470" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="4621:4680" placeholder="..." />
+            <marker date="1406733442187" expanded="true" signature="4831:4890" placeholder="..." />
           </folding>
         </state>
       </provider>

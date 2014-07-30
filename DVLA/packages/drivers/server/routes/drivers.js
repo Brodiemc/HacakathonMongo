@@ -19,6 +19,9 @@ module.exports = function(Drivers, app, auth, database) {
   });
   
   app.route('/drivers/get').get(drivers.all);
+  
+  app.route('/drivers/:driverId')
+    .get(drivers.driver);
 
   app.get('/drivers/example/render', function(req, res, next) {
     Drivers.render('index', {

@@ -47,4 +47,10 @@ DriverSchema.statics.load = function(id, cb) {
   }).exec(cb);
 };
 
+DriverSchema.statics.loadSurname = function(lastname, cb) {
+  this.findOne({
+    LastName: lastname
+  }).exec(cb);
+};
+
 mongoose.model('Driver', DriverSchema);

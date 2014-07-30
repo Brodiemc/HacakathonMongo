@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bbe3d97-0fc7-4c1b-ba10-51b81fe795e6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/static/gov.uk_logotype_crown.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DVLA/packages/system/public/assets/static/login.html" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/static/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DVLA/packages/system/public/assets/static/search.html" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/static/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,9 +31,16 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.814815" vertical-offset="6278" max-vertical-offset="8190">
-              <caret line="356" column="26" selection-start-line="356" selection-start-column="26" selection-end-line="356" selection-end-column="26" />
-              <folding />
+            <state vertical-scroll-proportion="-23.333334" vertical-offset="2484" max-vertical-offset="8154">
+              <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="80" />
+              <folding>
+                <marker date="1406749791860" expanded="true" signature="562:589" placeholder="..." />
+                <marker date="1406749791860" expanded="true" signature="740:767" placeholder="..." />
+                <marker date="1406749791860" expanded="true" signature="918:945" placeholder="..." />
+                <marker date="1406749791860" expanded="true" signature="4324:4351" placeholder="..." />
+                <marker date="1406749791860" expanded="true" signature="4502:4561" placeholder="..." />
+                <marker date="1406749791860" expanded="true" signature="4712:4771" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,19 +48,40 @@
       <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5645161" vertical-offset="4638" max-vertical-offset="8316">
-              <caret line="281" column="16" selection-start-line="281" selection-start-column="16" selection-end-line="281" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.6544811" vertical-offset="2595" max-vertical-offset="8478">
+              <caret line="175" column="76" selection-start-line="175" selection-start-column="76" selection-end-line="175" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1406744950008" expanded="true" signature="562:589" placeholder="..." />
-                <marker date="1406744950008" expanded="true" signature="740:767" placeholder="..." />
-                <marker date="1406744950008" expanded="true" signature="918:945" placeholder="..." />
-                <marker date="1406744950008" expanded="true" signature="4348:4375" placeholder="..." />
-                <marker date="1406744950008" expanded="true" signature="4526:4585" placeholder="..." />
-                <marker date="1406744950008" expanded="true" signature="4736:4795" placeholder="..." />
+                <marker date="1406749821276" expanded="true" signature="562:589" placeholder="..." />
+                <marker date="1406749821276" expanded="true" signature="740:767" placeholder="..." />
+                <marker date="1406749821276" expanded="true" signature="918:945" placeholder="..." />
+                <marker date="1406749821276" expanded="true" signature="4348:4375" placeholder="..." />
+                <marker date="1406749821276" expanded="true" signature="4526:4585" placeholder="..." />
+                <marker date="1406749821276" expanded="true" signature="4736:4795" placeholder="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gov.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/gov.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="driving_licence.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/driving_licence.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -79,7 +109,7 @@
     <option name="x" value="-2" />
     <option name="y" value="25" />
     <option name="width" value="1924" />
-    <option name="height" value="930" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -464,8 +494,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/DVLA/packages/system/public/assets/img" />
       <recent name="$PROJECT_DIR$/DVLA/packages/system/public/assets/static" />
+      <recent name="$PROJECT_DIR$/DVLA/packages/system/public/assets/img" />
       <recent name="$PROJECT_DIR$/DVLA/packages/system/public/views" />
       <recent name="$PROJECT_DIR$/DVLA/packages/system/public/assets/js" />
       <recent name="$PROJECT_DIR$/DVLA/packages/system/public/assets/css" />
@@ -662,7 +692,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="25" width="1924" height="930" extended-state="6" />
+    <frame x="-2" y="25" width="1924" height="1034" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -680,7 +710,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3056443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -713,7 +743,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8190">
           <caret line="187" column="6" selection-start-line="181" selection-start-column="0" selection-end-line="187" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1406749791860" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4324:4351" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4502:4561" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4712:4771" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -724,12 +761,12 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1406744950008" expanded="true" signature="562:589" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="740:767" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="918:945" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="4348:4375" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="4526:4585" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="4736:4795" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="4348:4375" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="4526:4585" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="4736:4795" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -738,7 +775,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7362">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1406749791860" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4324:4351" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4502:4561" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4712:4771" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -777,27 +821,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/driving_licence.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/gov.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.814815" vertical-offset="6278" max-vertical-offset="8190">
-          <caret line="356" column="26" selection-start-line="356" selection-start-column="26" selection-end-line="356" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="-23.333334" vertical-offset="2484" max-vertical-offset="8154">
+          <caret line="173" column="20" selection-start-line="173" selection-start-column="20" selection-end-line="173" selection-end-column="80" />
+          <folding>
+            <marker date="1406749791860" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4324:4351" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4502:4561" placeholder="..." />
+            <marker date="1406749791860" expanded="true" signature="4712:4771" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5645161" vertical-offset="4638" max-vertical-offset="8316">
-          <caret line="281" column="16" selection-start-line="281" selection-start-column="16" selection-end-line="281" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.6544811" vertical-offset="2595" max-vertical-offset="8478">
+          <caret line="175" column="76" selection-start-line="175" selection-start-column="76" selection-end-line="175" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1406744950008" expanded="true" signature="562:589" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="740:767" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="918:945" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="4348:4375" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="4526:4585" placeholder="..." />
-            <marker date="1406744950008" expanded="true" signature="4736:4795" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="4348:4375" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="4526:4585" placeholder="..." />
+            <marker date="1406749821276" expanded="true" signature="4736:4795" placeholder="..." />
           </folding>
         </state>
       </provider>

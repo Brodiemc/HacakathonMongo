@@ -173,7 +173,7 @@ document.body.className = document.body.className.replace('no-js','');
         <div class="header-global">
             <div class="header-logo">
                 <a href="https://www.gov.uk/" title="Go to the gov.uk homepage" id="logo" class="content">
-                    <img src="gov.uk_logotype_crown.png" alt="GOV.UK"></a>
+                    <img src="gov.uk_logotype_crown.png" alt="GOV.UK">GOV.UK</a>
             </div>
         </div>
     </div>
@@ -266,20 +266,16 @@ document.body.className = document.body.className.replace('no-js','');
     </span>
                     <label for="rfe">Reason for enquiry</label>
                     <select id="rfe">
-                        <optgroup label="Swedish Cars">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                        </optgroup>
-                        <optgroup label="German Cars">
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                        </optgroup>
+                        <option value="1" selected="selected">- Select Reason -</option>
+                        <option value="2">CEG Call</option>
+                        <option value="3">Enforcement Call</option>
+                        <option value="4">Assisted Digital</option>
                     </select>
                 </p>
                 <p class="info"></p>
                 <p></p>
 
-                
+
                 <div id="dln-control-group" class="group ">
     <span class="validation-message" id="dln-help">
 
@@ -386,14 +382,27 @@ document.body.className = document.body.className.replace('no-js','');
                     <script>
 
                         function sendDln() {
-                          var dln = document.getElementsByName('dln')[0].value
-                          var vrn = document.getElementsByName('vrn')[0].value
-                          var customerName = document.getElementsByName('customerName')[0].value
-                          var postcode = document.getElementsByName('postcode')[0].value
-                          var dob = document.getElementsByName('dob')[0].value
+                          var validForm = 0;
 
+                          var dln = document.getElementsByName('dln')[0].value;
+                          var vrn = document.getElementsByName('vrn')[0].value;
+                          var customerName = document.getElementsByName('customerName')[0].value;
+                          var postcode = document.getElementsByName('postcode')[0].value;
+                          var dob = document.getElementsByName('dob')[0].value;
 
+                          var e = document.getElementById("rfe");
+                          var strUser = e.options[e.selectedIndex].value;
+
+                          if (strUser === "1") {
+                          document.getElementById("rfe").style.border="3px solid red";
+                          validForm += 1;
+                          } else {
+                          document.getElementById("rfe").style.border="1px solid rgb(187, 187, 187)";
+                          }
+
+                          if (validForm == 0) {
                           window.location.href = "DVLAhack.htm?dln=" + dln + "?vrn=" + vrn + "?customerName=" + customerName + "?postcode=" + postcode + "?dob=" + dob;
+                          }
 
                         }
 

@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bbe3d97-0fc7-4c1b-ba10-51b81fe795e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/css/application-ac5c76582c33fd730fdc2704dc401728.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/css/application-c2ffe841ef43190446b7913524259db2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/js/application-c7dbb181d219cf9ced8ade278b3b39ad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/js/driverDetailsModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/css/fonts-607c54f71c7c1f98257595cedaa13a34.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/js/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/assets/css/print-546864271280c5a1b3d7e8a0bbe71896.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DVLA/packages/system/public/views/index.html" afterPath="$PROJECT_DIR$/DVLA/packages/system/public/views/index.html" />
     </list>
     <ignored path="HacakathonMongo.iws" />
@@ -35,16 +28,16 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6854839" vertical-offset="4512" max-vertical-offset="7110">
-              <caret line="279" column="23" selection-start-line="279" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.32258064" vertical-offset="1380" max-vertical-offset="7110">
+              <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
               <folding>
                 <element signature="tag#span#0;tag#div#3;tag#form#0;tag#div#1;tag#article#0;tag#main#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                <marker date="1406732746741" expanded="true" signature="574:601" placeholder="..." />
-                <marker date="1406732746741" expanded="true" signature="752:779" placeholder="..." />
-                <marker date="1406732746741" expanded="true" signature="930:957" placeholder="..." />
-                <marker date="1406732746741" expanded="true" signature="4520:4547" placeholder="..." />
-                <marker date="1406732746741" expanded="true" signature="4698:4757" placeholder="..." />
-                <marker date="1406732746741" expanded="true" signature="4908:4967" placeholder="..." />
+                <marker date="1406732853132" expanded="true" signature="574:601" placeholder="..." />
+                <marker date="1406732853132" expanded="true" signature="752:779" placeholder="..." />
+                <marker date="1406732853132" expanded="true" signature="930:957" placeholder="..." />
+                <marker date="1406732853132" expanded="true" signature="4519:4546" placeholder="..." />
+                <marker date="1406732853132" expanded="true" signature="4697:4756" placeholder="..." />
+                <marker date="1406732853132" expanded="true" signature="4907:4966" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -611,12 +604,12 @@
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="tag#span#0;tag#div#3;tag#form#0;tag#div#1;tag#article#0;tag#main#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <marker date="1406732746741" expanded="true" signature="574:601" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="752:779" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="930:957" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="4520:4547" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="4698:4757" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="4908:4967" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="574:601" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="752:779" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="930:957" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="4519:4546" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="4697:4756" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="4907:4966" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -639,16 +632,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6854839" vertical-offset="4512" max-vertical-offset="7110">
-          <caret line="279" column="23" selection-start-line="279" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.32258064" vertical-offset="1380" max-vertical-offset="7110">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
           <folding>
             <element signature="tag#span#0;tag#div#3;tag#form#0;tag#div#1;tag#article#0;tag#main#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <marker date="1406732746741" expanded="true" signature="574:601" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="752:779" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="930:957" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="4520:4547" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="4698:4757" placeholder="..." />
-            <marker date="1406732746741" expanded="true" signature="4908:4967" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="574:601" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="752:779" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="930:957" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="4519:4546" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="4697:4756" placeholder="..." />
+            <marker date="1406732853132" expanded="true" signature="4907:4966" placeholder="..." />
           </folding>
         </state>
       </provider>

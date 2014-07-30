@@ -25,7 +25,7 @@ VehicleSchema.statics.load = function(fname, lname, hnumber, pcode, cb) {
   this.find({
     FirstName: fname,
 	LastName: lname,
-	//HouseNumber: hnumber,
+	HouseNumber: hnumber,
 	PostCode: pcode
   }).exec(cb);
 };

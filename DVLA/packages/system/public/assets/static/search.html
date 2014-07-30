@@ -239,11 +239,7 @@ document.body.className = document.body.className.replace('no-js','');
             </header>
             <div class="login-form">
                 <div>
-                    <p>Some records have not been made available as part of the
-                        first Beta release. We will be releasing more records to the public
-                        during our beta phase.</p>
 
-                    <p>You should only use this service to view your own driving record.</p>
                 </div>
 
 
@@ -263,27 +259,14 @@ document.body.className = document.body.className.replace('no-js','');
                 <p>
                 </p>
 
-
-
-
-
-
                 <div id="dln-control-group" class="group ">
     <span class="validation-message" id="dln-help">
 
     </span>
-                    <label for="dln">Your driving licence number</label>
+                    <label for="dln">Driving licence number</label>
                     <input name="dln" id="dln" class="input-lg" type="text">
 
                     <div class="inline hint more-info"><span class="more-info-link" data-help="dln-help">Where to find this</span>
-                        <ul class="dln-help">
-                            <li>Your driving licence number can be found in section 5 of your driving licence
-                                photocard
-                            </li>
-
-                            <li><img id="whatLicenceImg" src="View%20Driving%20Record_files/driving_licence.png"
-                                     alt=""></li>
-                        </ul>
 
                     </div>
                     <style>
@@ -292,7 +275,7 @@ document.body.className = document.body.className.replace('no-js','');
                         color:grey;
                         }
                     </style>
-                    <p class="info">Your driving licence number eg MORGA657054SM9IJ</p>
+                    <p class="info">Driving licence number eg MORGA657054SM9IJ</p>
 
                 </div>
                 <p></p>
@@ -305,28 +288,52 @@ document.body.className = document.body.className.replace('no-js','');
                 <p>
                 </p>
 
+
+                <div id="dln-control-group" class="group ">
+    <span class="validation-message" id="dln-help">
+
+    </span>
+                    <label for="vrn">Vehicle registration number</label>
+                    <input name="vrn" id="vrn" class="input-lg" type="text">
+
+                    <div class="inline hint more-info"><span class="more-info-link" data-help="dln-help">Where to find this</span>
+                        <ul class="dln-help">
+
+                        </ul>
+
+                    </div>
+                    <style>
+                        .info {
+                        font-size:16px;
+                        color:grey;
+                        }
+                    </style>
+                    <p class="info">Vehicle registration number eg AA11 AAA</p>
+
+                </div>
+                <p></p>
+
+                <p>
+                </p>
+
+
+
+                <p>
+                </p>
+
+
                 <div id="nino-control-group" class="group ">
     <span class="validation-message" id="nino-help">
 
     </span>
-                    <label for="nino">Your National Insurance number</label>
-                    <input name="nino" id="nino" class="input-lg" type="text">
+                    <label for="customerName">Customer name</label>
+                    <input name="customerName" id="customerName" class="input-lg" type="text">
 
                     <div class="inline hint more-info">
                         <span class="more-info-link" data-help="nino-help">Where to find this</span>
-                        <ul class="nino-help">
-                            <li>Your National Insurance number can be found on
-                                <ul>
-                                    <li>your National Insurance card</li>
-                                    <li>your payslip</li>
-                                    <li>P60</li>
-                                    <li>benefits information</li>
-                                    <li>tax return</li>
-                                </ul>
-                            </li>
-                        </ul>
+
                     </div>
-                    <p class="info">Your National Insurance number eg QQ123456C</p>
+                    <p class="info">Customer name eg Joe Bloggs</p>
                 </div>
                 <p></p>
 
@@ -339,6 +346,19 @@ document.body.className = document.body.className.replace('no-js','');
                     <input name="postcode" id="postcode" class="input-sm"type="text">
                 </p>
                 <p class="info">Your postcode eg EH1 9SP</p>
+                <p></p>
+
+                <p></p>
+
+
+                <p id="dateofbirth-control-group" class="group ">
+    <span class="validation-message" id="postcode-help">
+
+    </span>
+                    <label for="dob">Date of birth</label>
+                    <input name="dob" id="dob" class="input-sm"type="text">
+                </p>
+                <p class="info">Date of birth eg 01/01/1985</p>
                 <p></p>
 
 
@@ -354,30 +374,6 @@ document.body.className = document.body.className.replace('no-js','');
                         function sendDln() {
                         var validForm = 0;
 
-                          var dln = document.getElementsByName('dln')[0].value
-                          if (dln === "") {
-                          document.getElementById("dln").style.border="3px solid red";
-                          validForm += 1;
-                          } else {
-                          document.getElementById("dln").style.border="1px solid rgb(187, 187, 187)";
-                             }
-
-                           var nino = document.getElementsByName('nino')[0].value
-                          if (nino === "") {
-                          document.getElementById("nino").style.border="3px solid red";
-                          validForm += 1;
-                          } else {
-                          document.getElementById("nino").style.border="1px solid rgb(187, 187, 187)";
-                          }
-
-
-                            var postcode = document.getElementsByName('postcode')[0].value
-                          if (postcode === "") {
-                          document.getElementById("postcode").style.border="3px solid red";
-                          validForm += 1;
-                          } else {
-                          document.getElementById("postcode").style.border="1px solid rgb(187, 187, 187)";
-                          }
 
                           if (validForm == 0) {
                           window.location.href = "DVLAhack.htm?dln=" + dln;
@@ -385,19 +381,13 @@ document.body.className = document.body.className.replace('no-js','');
                         }
 
                         </script>
-                    <input id="submitDln" onclick="sendDln();" class="button " type="submit" value="View record"></input>
+                    <input id="submitDln" onclick="sendDln();" class="button " type="submit" value="Search records"></input>
 
                 </p>
 
 
                 <div>
-                    <p>
-                        Don't know your driving licence number? <a
-                            href="https://www.viewdrivingrecord.service.gov.uk/driving-record/personal-details">Search
-                        for your record using your personal details</a>.
-                        <br>Alternatively, you can return to the <a
-                            href="https://www.viewdrivingrecord.service.gov.uk/">Start Now</a> page.
-                    </p>
+                    
                 </div>
             </div>
 

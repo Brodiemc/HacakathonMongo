@@ -259,6 +259,27 @@ document.body.className = document.body.className.replace('no-js','');
                 <p>
                 </p>
 
+
+                <p id="dateofbirth-control-group" class="group ">
+    <span class="validation-message" id="postcode-help">
+
+    </span>
+                    <label for="rfe">Reason for enquiry</label>
+                    <select id="rfe">
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p class="info"></p>
+                <p></p>
+
+                
                 <div id="dln-control-group" class="group ">
     <span class="validation-message" id="dln-help">
 
@@ -266,9 +287,7 @@ document.body.className = document.body.className.replace('no-js','');
                     <label for="dln">Driving licence number</label>
                     <input name="dln" id="dln" class="input-lg" type="text">
 
-                    <div class="inline hint more-info"><span class="more-info-link" data-help="dln-help">Where to find this</span>
 
-                    </div>
                     <style>
                         .info {
                         font-size:16px;
@@ -296,12 +315,7 @@ document.body.className = document.body.className.replace('no-js','');
                     <label for="vrn">Vehicle registration number</label>
                     <input name="vrn" id="vrn" class="input-lg" type="text">
 
-                    <div class="inline hint more-info"><span class="more-info-link" data-help="dln-help">Where to find this</span>
-                        <ul class="dln-help">
 
-                        </ul>
-
-                    </div>
                     <style>
                         .info {
                         font-size:16px;
@@ -329,10 +343,7 @@ document.body.className = document.body.className.replace('no-js','');
                     <label for="customerName">Customer name</label>
                     <input name="customerName" id="customerName" class="input-lg" type="text">
 
-                    <div class="inline hint more-info">
-                        <span class="more-info-link" data-help="nino-help">Where to find this</span>
 
-                    </div>
                     <p class="info">Customer name eg Joe Bloggs</p>
                 </div>
                 <p></p>
@@ -362,6 +373,9 @@ document.body.className = document.body.className.replace('no-js','');
                 <p></p>
 
 
+
+
+
                 <style>
                     .red-border{
                     border: 1px solid red;
@@ -377,6 +391,7 @@ document.body.className = document.body.className.replace('no-js','');
                           var customerName = document.getElementsByName('customerName')[0].value
                           var postcode = document.getElementsByName('postcode')[0].value
                           var dob = document.getElementsByName('dob')[0].value
+
 
                           window.location.href = "DVLAhack.htm?dln=" + dln + "?vrn=" + vrn + "?customerName=" + customerName + "?postcode=" + postcode + "?dob=" + dob;
 

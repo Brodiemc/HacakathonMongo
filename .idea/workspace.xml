@@ -39,17 +39,17 @@
       <file leaf-file-name="search.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37096775" vertical-offset="6312" max-vertical-offset="8046">
-              <caret line="366" column="42" selection-start-line="366" selection-start-column="42" selection-end-line="366" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.5645161" vertical-offset="4638" max-vertical-offset="8316">
+              <caret line="281" column="16" selection-start-line="281" selection-start-column="16" selection-end-line="281" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1406744356611" expanded="true" signature="562:589" placeholder="..." />
-                <marker date="1406744356611" expanded="true" signature="740:767" placeholder="..." />
-                <marker date="1406744356611" expanded="true" signature="918:945" placeholder="..." />
-                <marker date="1406744356611" expanded="true" signature="4348:4375" placeholder="..." />
-                <marker date="1406744356611" expanded="true" signature="4526:4585" placeholder="..." />
-                <marker date="1406744356611" expanded="true" signature="4736:4795" placeholder="..." />
+                <marker date="1406744950008" expanded="true" signature="562:589" placeholder="..." />
+                <marker date="1406744950008" expanded="true" signature="740:767" placeholder="..." />
+                <marker date="1406744950008" expanded="true" signature="918:945" placeholder="..." />
+                <marker date="1406744950008" expanded="true" signature="4348:4375" placeholder="..." />
+                <marker date="1406744950008" expanded="true" signature="4526:4585" placeholder="..." />
+                <marker date="1406744950008" expanded="true" signature="4736:4795" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -326,6 +326,120 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HacakathonMongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HacakathonMongo" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DVLA" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sprites" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HacakathonMongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HacakathonMongo" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DVLA" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loaders" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HacakathonMongo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HacakathonMongo" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DVLA" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apple" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,12 +724,12 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1406744356611" expanded="true" signature="562:589" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="740:767" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="918:945" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="4348:4375" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="4526:4585" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="4736:4795" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="4348:4375" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="4526:4585" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="4736:4795" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -673,17 +787,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DVLA/packages/system/public/assets/static/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37096775" vertical-offset="6312" max-vertical-offset="8046">
-          <caret line="366" column="42" selection-start-line="366" selection-start-column="42" selection-end-line="366" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.5645161" vertical-offset="4638" max-vertical-offset="8316">
+          <caret line="281" column="16" selection-start-line="281" selection-start-column="16" selection-end-line="281" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1406744356611" expanded="true" signature="562:589" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="740:767" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="918:945" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="4348:4375" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="4526:4585" placeholder="..." />
-            <marker date="1406744356611" expanded="true" signature="4736:4795" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="562:589" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="740:767" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="918:945" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="4348:4375" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="4526:4585" placeholder="..." />
+            <marker date="1406744950008" expanded="true" signature="4736:4795" placeholder="..." />
           </folding>
         </state>
       </provider>

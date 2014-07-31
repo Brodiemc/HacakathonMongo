@@ -35,7 +35,12 @@ var DriverSchema = new Schema({
   	      type: String,
   	      required: true,
   	      trim: true
-  	  }
+  	  },
+	  VINNumbers: {
+  	      type: String,
+  	      required: true,
+  	      trim: true
+	  }
 },
   {collection: 'driver'});
 /**

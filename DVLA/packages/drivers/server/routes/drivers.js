@@ -23,6 +23,9 @@ module.exports = function(Drivers, app, auth, database) {
   app.route('/drivers/:driverId')
     .get(drivers.driver);
 	
+    app.route('/driversLink/:driverId/:VIN')
+      .get(drivers.driverLink);
+	
   app.route('/driversSearch/:surname')
       .get(drivers.driverSearch);
 

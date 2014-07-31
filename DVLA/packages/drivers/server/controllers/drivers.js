@@ -41,19 +41,90 @@ exports.driver = function(req, res) {
   });
 };
 
+exports.driverLink = function(req, res) {
+	
+	Driver.load(req.params.driverId, function(err, driver) {
+		var vinnumbers = driver.VINNumbers + ' ' + req.params.VIN;
+		Driver.update(
+		    {currentDriverNumber: req.params.driverId}
+		  , { $set: {'VINNumbers': vinnumbers.trim()}}
+		  , function(error, result) {
+		      renderData("Success", res);
+		    }
+		);
+	});
+	
+};
+
 function renderData(driver, res) {
   var fname = driver.FirstName;
   var lname = driver.LastName;
   var hname = driver.HouseNumber;
   var pcode = driver.PostCode;
+  var VINNumber = driver.VINNumbers;
   
+  if (VINNumber == "" || VINNumber == undefined)
+  {
+	  Vehicle.load(fname, lname, hname, pcode, function(err, vehicle) {
 
-Vehicle.load(fname, lname, hname, pcode, function(err, vehicle) {
+	if (vehicle != [])
+		linkData(driver, vehicle);
+
+		res.json([{driver: driver}, {vehicle: vehicle}]);
+		//console.log(vehicle);
+	});
+}
+  else {
+	  var array = VINNumber.split(' ');
+	  
+	  getVehicles(array, function(vArray) {
+		  res.json([{driver: driver}, {vehicle: vArray}]);
+		  console.log('get vin numbers');
+	  });
+	  
+	}
 	
-	res.json({driver: driver, vehicle: vehicle});
-	//console.log(vehicle);
-});
+}
+
+function getVehicles ( array, callback) {
+
+  var i = 0;
+  var vehicles = [];
+  var keys = array.length;
+  for (i = 0; i<array.length;) {
+	  Vehicle.loadVIN(array[i], function(err, vehicle) {
+		  console.log(vehicle);
+	  	vehicles.push(vehicle);
+		if (--keys === 0)
+			callback(vehicles);
+	  });
+	  i = i+1;
+  }
+  	
+}
+
+function onComplete(vehicles, cb) {
+    cb(vehicles);
+};
+
+function linkData(driver, vehicles) {
+	console.log(vehicles.length);
+	var i = 0;
+	var VINString = '';
+	for (i = 0; i<vehicles.length;) {
+		console.log(vehicles[i].VIN);
+		VINString = VINString + ' ' + vehicles[i].VIN;
+		i = i+1;
+	}
 	
+	console.log(driver.currentDriverNumber);
+	Driver.update(
+	    {currentDriverNumber: driver.currentDriverNumber}
+	  , { $set: {'VINNumbers': VINString.trim()}}
+	  , function(error, result) {
+	      console.dir(result);
+	    }
+	);
 }
 
 exports.driverSearch = function(req, res) {

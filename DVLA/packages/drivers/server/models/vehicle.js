@@ -30,4 +30,10 @@ VehicleSchema.statics.load = function(fname, lname, hnumber, pcode, cb) {
   }).exec(cb);
 };
 
+VehicleSchema.statics.loadVIN = function(id, cb) {
+  this.findOne({
+    VIN: id
+  }).exec(cb);
+};
+
 mongoose.model('Vehicle', VehicleSchema);

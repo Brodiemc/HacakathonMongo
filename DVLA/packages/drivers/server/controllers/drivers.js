@@ -68,7 +68,7 @@ exports.driverLink = function(req, res) {
 			}
 		}
 		else {
-			rres.json("Failed");
+			res.json("Failed");
 		}
 		});
 	});

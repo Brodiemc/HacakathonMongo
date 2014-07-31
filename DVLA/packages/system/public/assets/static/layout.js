@@ -76,6 +76,7 @@
 				items.push ( buildVehicleTax ( obj,i ) );
 				items.push ( buildVehicleDetails ( obj,i ) );
 			}
+			items.push('</div>');
 		}
 		else
 		{
@@ -98,6 +99,19 @@
 	function buildVehicleData ( obj, i )
 	{
 		var items = new Array ( );
+		
+		
+		items.push ('<div class="panel-group" id="accordion">');
+ items.push (' <div class="panel panel-default">');
+    items.push ('<div class="panel-heading">');
+     items.push (' <h4 class="panel-title">');
+       items.push (' <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">');
+		
+		
+		
+		
+		
+		
 		//items.push ('<p><img src="img/vehicle-data2.png"/></p>');
 			items.push ('<div class="row">');
 			items.push ('<div class="col-md-4 reg">' + obj[1].vehicle[i].VRM + '</div>');
@@ -118,11 +132,23 @@
 				items.push ('<div class="col-md-4 isSoonMot glyphicon glyphicon-warning-sign"> MOT</div>');
 			}
 			items.push ('</div>');	
+			
+			
+			
+			
+			
+			items.push ('</a>');
+     items.push (' </h4>');
+    items.push ('</div>');
 		return items.join("");
 	}
 	function buildVehicleTax ( obj, i )
 	{
 		var items = new Array ( );
+		
+		items.push ('<div id="collapseOne" class="panel-collapse collapse in">');
+		items.push ('<div class="panel-body">');
+		
 		items.push ('<p>');
 		items.push ('<table class="table table-striped">');
 		items.push ('<tr>');
@@ -192,6 +218,9 @@
 		items.push(' <td><b>Not available</b></td>');
 		items.push(' </tr>');
 		items.push(' </table></p>');
+		items.push('</div>');
+		items.push('</div>');
+		items.push('</div>');
 		return items.join("");
 	}
 	

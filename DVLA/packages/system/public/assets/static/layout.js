@@ -185,6 +185,8 @@
 		items.push ( 'VIN: <input type="text"  id="vin"><br>' );
 		items.push ( '<br>' );
 		items.push ( '<button type="button" onclick="clickButton()">Submit</button>'  );
+		items.push ( '<label id="errMsg" style="color:red;"></label>');
+		
 		return items.join("");
 	}
 	
@@ -192,9 +194,11 @@
 	{
 		$.getJSON( "http://localhost:9000/driversLink/" + getParameterByName ( "dln" ) + "/" + $('#vin').val() , function( data3 ) {
 			
-			
-			location.reload();
-			
+			if(data3 != "Success"){
+				$('#errMsg').text('Sorry no records match your records');
+			}else{
+							location.reload();
+			}
 		});
 	}
 	

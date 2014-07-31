@@ -6,7 +6,7 @@
 		//var obj = jQuery.parseJSON( data );
 		
 		if (getParameterByName ( "customerName" ) == "") {
-		$.getJSON( "http://localhost:9000/drivers/" + getParameterByName ( "dln" ), function( data2 ) {
+		$.getJSON( "http://10.81.16.125:9000/drivers/" + getParameterByName ( "dln" ), function( data2 ) {
 			//console.log(data);
 			//var obj = jQuery.parseJSON( data );
 			
@@ -18,12 +18,12 @@
 
 			div.innerHTML = htmlString;
 			
-			
+			$('.acc').addClass('collapsed');
 			
 		});
 		}
 		else {
-		$.getJSON( "http://localhost:9000/driversSearch/" + getParameterByName ( "customerName" ), function( data2 ) {
+		$.getJSON( "http://10.81.16.125:9000/driversSearch/" + getParameterByName ( "customerName" ), function( data2 ) {
 			//console.log(data);
 			//var obj = jQuery.parseJSON( data );
 			
@@ -35,6 +35,7 @@
 
 			div.innerHTML = htmlString;
 			
+
 			
 			
 		});
@@ -89,13 +90,8 @@
 	function buildTopDiv ( obj )
 	{
 		var items = new Array ( );
-		items.push('<h4><div id="circle">222</div> vehicle keeper matches for this driver</h4>');
-		items.push('<p>');
-		for ( var i = 0; i < obj[1].vehicle.length;i++)
-		{
-			items.push('<a href="#"><b>&rarr;' + obj[1].vehicle[i].VRM + '   ' +  obj[1].vehicle[i].YearOfManufacture + ' ' + obj[1].vehicle[i].Make + ' ' + obj[1].vehicle[i].Model +'</b></a><br>');
-		}
-		items.push('</p>');
+		items.push('<h4><span class="circle">' + obj[1].vehicle.length + '</span> vehicles for this driver record</h4>');
+		
 		return items.join("");
 	}
 	function buildVehicleData ( obj, i )
@@ -107,7 +103,7 @@
  items.push (' <div class="panel panel-default">');
     items.push ('<div class="panel-heading">');
      items.push (' <h4 class="panel-title">');
-       items.push (' <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">');
+       items.push (' <a data-toggle="collapse" data-parent="#accordion" href="#collapse' + i + '" class="acc">');
 		
 		
 		
@@ -116,22 +112,22 @@
 		
 		//items.push ('<p><img src="img/vehicle-data2.png"/></p>');
 			items.push ('<div class="row">');
-			items.push ('<div class="col-md-4 reg">' + obj[1].vehicle[i].VRM + '</div>');
+			items.push ('<div class="col-md-4 col-xs-4 reg">' + obj[1].vehicle[i].VRM + '</div>');
 			var tax = Math.floor(Math.random() * 3) + 1;
 			var mot = Math.floor(Math.random() * 3) + 1;
 			if(tax == 1){
-				items.push ('<div class="col-md-4 isValidTax glyphicon glyphicon-ok"> Tax</div>');
+				items.push ('<div class="col-md-4 col-xs-4 isValidTax glyphicon glyphicon-ok"> Tax</div>');
 			}else if(tax == 2){
-				items.push ('<div class="col-md-4 isInvalidTax glyphicon glyphicon-remove"> Tax</div>');
+				items.push ('<div class="col-md-4 col-xs-4 isInvalidTax glyphicon glyphicon-remove"> Tax</div>');
 			}else if(tax ==3){
-				items.push ('<div class="col-md-4 isSoonTax glyphicon glyphicon-warning-sign"> Tax</div>');
+				items.push ('<div class="col-md-4 col-xs-4 isSoonTax glyphicon glyphicon-warning-sign"> Tax</div>');
 			}
 			if(mot == 1){
-				items.push ('<div class="col-md-4 isValidMot glyphicon glyphicon-ok"> MOT</div>');
+				items.push ('<div class="col-md-4 col-xs-4 isValidMot glyphicon glyphicon-ok"> MOT</div>');
 			}else if(mot == 2){
-				items.push ('<div class="col-md-4 isInvalidMot glyphicon glyphicon-remove"> MOT</div>');
+				items.push ('<div class="col-md-4 col-xs-4 isInvalidMot glyphicon glyphicon-remove"> MOT</div>');
 			}else if(mot ==3){
-				items.push ('<div class="col-md-4 isSoonMot glyphicon glyphicon-warning-sign"> MOT</div>');
+				items.push ('<div class="col-md-4 col-xs-4 isSoonMot glyphicon glyphicon-warning-sign"> MOT</div>');
 			}
 			items.push ('</div>');	
 			
@@ -148,7 +144,7 @@
 	{
 		var items = new Array ( );
 		
-		items.push ('<div id="collapseOne" class="panel-collapse collapse in">');
+		items.push ('<div id="collapse' + i +'" class="panel-collapse collapse in">');
 		items.push ('<div class="panel-body">');
 		
 		items.push ('<p>');
@@ -242,7 +238,7 @@
 	
 	function clickButton ( )
 	{
-		$.getJSON( "http://localhost:9000/driversLink/" + getParameterByName ( "dln" ) + "/" + $('#vin').val() , function( data3 ) {
+		$.getJSON( "http://10.81.16.125:9000/driversLink/" + getParameterByName ( "dln" ) + "/" + $('#vin').val() , function( data3 ) {
 			
 			if(data3 != "Success"){
 				$('#errMsg').text('Sorry no records match your records');
@@ -258,4 +254,8 @@
         results = regex.exec(location.search);
     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 	}	
+	$(document).ready(function(){
+		
+		$('.acc').addClass('collapsed');
+	});
 	

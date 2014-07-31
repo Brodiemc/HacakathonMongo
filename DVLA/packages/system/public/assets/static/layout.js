@@ -98,7 +98,26 @@
 	function buildVehicleData ( obj, i )
 	{
 		var items = new Array ( );
-		items.push ('<p><img src="img/vehicle-data2.png"/></p>');
+		//items.push ('<p><img src="img/vehicle-data2.png"/></p>');
+			items.push ('<div class="row">');
+			items.push ('<div class="col-md-4 reg">' + +obj[1].vehicle[i].VRM + '/div>');
+			var tax = Math.floor(Math.random() * 3) + 1;
+			var mot = Math.floor(Math.random() * 3) + 1;
+			if(tax == 1){
+				items.push ('<div class="col-md-4 isValidTax">? Taxed</div>');
+			}else if(tax == 2)
+				items.push ('<div class="col-md-4 isInvalidTax">? Taxed</div>');
+			}else{
+				items.push ('<div class="col-md-4 isSoonTax">! Taxed</div>');
+			}
+			if(mot == 1){
+				items.push ('<div class="col-md-4 isValidMot">? MOT</div>');
+			}else if(mot == 2)
+				items.push ('<div class="col-md-4 isInvalidMot">? MOT</div>');
+			}else{
+				items.push ('<div class="col-md-4 isSoonMot">! MOT</div>');
+			}
+			items.push ('</div>');	
 		return items.join("");
 	}
 	function buildVehicleTax ( obj, i )

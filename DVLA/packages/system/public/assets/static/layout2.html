@@ -45,6 +45,53 @@ background-color: rgb(213, 56, 128);
 color:black;
 }
 
+.reg{
+background-color: rgb(254,211,9);
+color:black;
+border: 1px solid #999;
+padding: 0.2em 0.5em 0.1em 0.5em;
+font-weight: 700;
+font-size: 185%;
+border-radius: 5px;
+}
+
+.isValidTax, .isValidMot {
+align: center;
+border: 1px solid #999;
+  background: #28A297; 
+  padding: 0.2em 0.5em 0.1em 0.5em;
+  border-radius: 5px;
+  font-size: 185%;
+  color:white;}
+
+.isInvalidTax, .isInvalidMot {
+align: center;
+border: 1px solid #999;
+  background: #af292e; 
+  padding: 0.2em 0.5em 0.1em 0.5em;
+  border-radius: 5px;
+  font-size: 185%;
+  color:white;}
+  
+.isSoonTax, .isSoonMot {
+align: center;
+border: 1px solid #999;
+  background: #A18703; 
+  padding: 0.2em 0.5em 0.1em 0.5em;
+  border-radius: 5px;
+  font-size: 185%;
+  color:white;
+  }  
+
+
+
+.isValidTax p, .isValidMot p, .isInvalidTax p, .isInvalidMot p, isSoonMot p, isSoonTax p {
+  margin: auto;
+  margin-top: 0.5em; }
+  @media (max-width: 640px) {
+    .isValidTax p, .isValidMot p, .isInvalidTax p, .isInvalidMot p, isSoonMot p, isSoonTax p {
+      font-size: 100%; } }
+
 #circle {
     width: 50px;
     height: 50px;
@@ -163,7 +210,9 @@ color:black;
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          <img src="img/vehicle-data2.png"/>
+			<div class="row"><div class="col-md-4 reg">VN58 WKY</div>
+			<div class="col-md-4 isSoonTax">! Taxed</div>
+			<div class="col-md-4 isValidMot">✔ MOT</div></div>
         </a>
       </h4>
     </div>
@@ -241,7 +290,9 @@ color:black;
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          <img src="img/vehicle-data.png"/>
+		<div class="row"><div class="col-md-4 reg">VN58 WKY</div>
+			<div class="col-md-4 isSoonTax">! Taxed</div>
+			<div class="col-md-4 isValidMot">✔ MOT</div></div>
         </a>
       </h4>
     </div>

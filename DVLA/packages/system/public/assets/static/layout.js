@@ -222,7 +222,7 @@
 		items.push(' </table></p>');
 		items.push('</div>');
 		items.push('</div>');
-		items.push('</div>');
+
 		return items.join("");
 	}
 	

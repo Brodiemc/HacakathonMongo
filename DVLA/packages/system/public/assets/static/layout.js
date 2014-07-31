@@ -100,22 +100,22 @@
 		var items = new Array ( );
 		//items.push ('<p><img src="img/vehicle-data2.png"/></p>');
 			items.push ('<div class="row">');
-			items.push ('<div class="col-md-4 reg">' + +obj[1].vehicle[i].VRM + '/div>');
+			items.push ('<div class="col-md-4 reg">' + obj[1].vehicle[i].VRM + '</div>');
 			var tax = Math.floor(Math.random() * 3) + 1;
 			var mot = Math.floor(Math.random() * 3) + 1;
 			if(tax == 1){
-				items.push ('<div class="col-md-4 isValidTax">? Taxed</div>');
+				items.push ('<div class="col-md-4 isValidTax glyphicon glyphicon-ok"> Tax</div>');
 			}else if(tax == 2){
-				items.push ('<div class="col-md-4 isInvalidTax">? Taxed</div>');
+				items.push ('<div class="col-md-4 isInvalidTax glyphicon glyphicon-remove"> Tax</div>');
 			}else if(tax ==3){
-				items.push ('<div class="col-md-4 isSoonTax">! Taxed</div>');
+				items.push ('<div class="col-md-4 isSoonTax glyphicon glyphicon-warning-sign"> Tax</div>');
 			}
 			if(mot == 1){
-				items.push ('<div class="col-md-4 isValidMot">? MOT</div>');
+				items.push ('<div class="col-md-4 isValidMot glyphicon glyphicon-ok"> MOT</div>');
 			}else if(mot == 2){
-				items.push ('<div class="col-md-4 isInvalidMot">? MOT</div>');
+				items.push ('<div class="col-md-4 isInvalidMot glyphicon glyphicon-remove"> MOT</div>');
 			}else if(mot ==3){
-				items.push ('<div class="col-md-4 isSoonMot">! MOT</div>');
+				items.push ('<div class="col-md-4 isSoonMot glyphicon glyphicon-warning-sign"> MOT</div>');
 			}
 			items.push ('</div>');	
 		return items.join("");

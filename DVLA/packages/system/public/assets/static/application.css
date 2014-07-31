@@ -1,0 +1,1432 @@
+/* CSS 3 Mixins
+
+  Add them as you need them. This should let us manage vendor prefixes in one place.
+ */
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Cross-browser shims
+
+  Ways of normalising properties across browsers.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Usage:
+   @include inline-block
+
+   or
+
+   @include inline-block("250px")
+
+   which gives a min-height to the inline-block elements.
+*/
+/* Contain floats usage:
+
+   .this-has-floated-children {
+     @extend %contain-floats;
+   }
+
+*/
+/* line 49, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_shims.scss */
+#global-header .header-wrapper:after, #global-header .header-wrapper .header-global:after, #global-header .header-wrapper .header-global .header-logo:after, #global-header .header-proposition #proposition-links:after, .hgroup:after, .login-form p:after, .activity-navigation ul:after, #your-details dl:after, .accordion > li:after, .accordion-content:after, .accordion-group a:after, ul.detail:after, .accordion-content ul.drive:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 1, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_hover-hint.scss */
+#content .more-info-link {
+  color: #2e3191;
+  cursor: pointer;
+  text-decoration: underline;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+/* line 11, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_hover-hint.scss */
+#content .more-info > ul {
+  display: none;
+  background: #f8f8f8;
+  position: absolute;
+  margin: -0.2em 0 0 0;
+  padding: 0.6em;
+  width: 22em;
+  z-index: 101;
+  list-style: none;
+  background: #f8f8f8;
+  border: 3px solid #097f96; }
+
+/* line 24, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_hover-hint.scss */
+#content .more-info {
+  position: relative; }
+
+/* line 28, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_hover-hint.scss */
+body.no-js #content .more-info:hover ul {
+  display: block; }
+
+/* Cross-browser shims
+
+  Ways of normalising properties across browsers.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Usage:
+   @include inline-block
+
+   or
+
+   @include inline-block("250px")
+
+   which gives a min-height to the inline-block elements.
+*/
+/* Contain floats usage:
+
+   .this-has-floated-children {
+     @extend %contain-floats;
+   }
+
+*/
+/* line 49, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_shims.scss */
+#global-header .header-wrapper:after, #global-header .header-wrapper .header-global:after, #global-header .header-wrapper .header-global .header-logo:after, #global-header .header-proposition #proposition-links:after, .hgroup:after, .login-form p:after, .activity-navigation ul:after, #your-details dl:after, .accordion > li:after, .accordion-content:after, .accordion-group a:after, ul.detail:after, .accordion-content ul.drive:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 2, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+#global-header {
+  background-color: #0b0c0c;
+  width: 100%; }
+  /* line 6, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+  #global-header .header-wrapper {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0.5em 15px; }
+    @media (max-width: 640px) {
+      /* line 6, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-wrapper {
+        padding: 0.5em 0; } }
+    /* line 21, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header .header-wrapper .header-global .header-logo {
+      float: left; }
+      @media (min-width: 769px) {
+        /* line 21, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        #global-header .header-wrapper .header-global .header-logo {
+          width: 33.33%; } }
+      @media screen and (max-width: 379px) {
+        /* line 21, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        #global-header .header-wrapper .header-global .header-logo {
+          width: auto;
+          float: none; } }
+      /* line 33, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-wrapper .header-global .header-logo .content {
+        margin: 0 15px; }
+    /* line 37, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header .header-wrapper .header-global .header-logo {
+      margin: 5px 0 2px; }
+  @media (min-width: 769px) {
+    /* line 44, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header.with-proposition .header-wrapper .header-global {
+      float: left;
+      width: 33.33%; }
+      /* line 50, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header.with-proposition .header-wrapper .header-global .header-logo,
+      #global-header.with-proposition .header-wrapper .header-global .site-search {
+        width: 100%; } }
+  @media (min-width: 769px) {
+    /* line 55, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header.with-proposition .header-wrapper .header-proposition {
+      width: 66.66%;
+      float: left; } }
+  /* line 60, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+  #global-header.with-proposition .header-wrapper .header-proposition .content {
+    margin: 0 15px; }
+  /* line 67, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+  #global-header #logo {
+    float: left;
+    position: relative;
+    top: 1px;
+    height: 30px;
+    overflow: visible;
+    vertical-align: baseline;
+    width: 159px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1em;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    margin-bottom: -1px;
+    padding-bottom: 1px; }
+    /* line 85, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header #logo img {
+      position: relative;
+      top: -2px;
+      width: 35px;
+      height: 31px;
+      left: 0;
+      padding-right: 6px;
+      float: left;
+      display: inline;
+      line-height: inherit;
+      border: none; }
+    /* line 100, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header #logo img:hover {
+      top: -2px; }
+    /* line 104, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header #logo:hover img {
+      top: -2px; }
+    /* line 109, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header #logo:hover, #global-header #logo:focus {
+      text-decoration: none;
+      border-bottom: 1px solid;
+      padding-bottom: 0; }
+    /* line 115, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header #logo:active {
+      color: #2b8cc4; }
+  /* line 119, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+  #global-header .header-proposition {
+    padding-top: 10px; }
+    @media (min-width: 769px) {
+      /* line 119, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-proposition {
+        padding-top: 0; } }
+    /* line 124, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header .header-proposition #proposition-name {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 400;
+      text-transform: none;
+      font-weight: bold;
+      color: white;
+      text-decoration: none; }
+      @media (max-width: 640px) {
+        /* line 124, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        #global-header .header-proposition #proposition-name {
+          font-size: 20px;
+          line-height: 1.2; } }
+    /* line 130, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header .header-proposition a.menu {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 300;
+      text-transform: none;
+      color: white;
+      display: block;
+      float: right;
+      text-decoration: none;
+      padding-top: 6px; }
+      @media (max-width: 640px) {
+        /* line 130, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        #global-header .header-proposition a.menu {
+          font-size: 14px;
+          line-height: 1.14286; } }
+      @media (min-width: 769px) {
+        /* line 130, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        #global-header .header-proposition a.menu {
+          display: none; } }
+      /* line 140, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-proposition a.menu:hover {
+        text-decoration: underline; }
+      /* line 143, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-proposition a.menu:after {
+        display: inline-block;
+        font-size: 8px;
+        height: 8px;
+        padding-left: 5px;
+        vertical-align: middle;
+        content: " \25BC"; }
+      /* line 151, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-proposition a.menu.js-hidden:after {
+        content: " \25B2"; }
+    /* line 155, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header .header-proposition #proposition-menu {
+      margin-top: 5px; }
+    /* line 158, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-header .header-proposition #proposition-links {
+      clear: both;
+      margin: 2px 0 0 0;
+      padding: 0; }
+      /* line 164, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      .js-enabled #global-header .header-proposition #proposition-links {
+        display: none; }
+        @media (min-width: 769px) {
+          /* line 164, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+          .js-enabled #global-header .header-proposition #proposition-links {
+            display: block; } }
+        /* line 169, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        .js-enabled #global-header .header-proposition #proposition-links.js-visible {
+          display: block; }
+      /* line 174, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-header .header-proposition #proposition-links li {
+        float: left;
+        width: 50%;
+        padding: 3px 0;
+        border-bottom: 1px solid #bfc1c3; }
+        @media (min-width: 769px) {
+          /* line 174, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+          #global-header .header-proposition #proposition-links li {
+            display: block;
+            width: auto;
+            padding: 0 15px 0 0;
+            border-bottom: 0; }
+            /* line 186, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+            #global-header .header-proposition #proposition-links li.clear-child {
+              clear: left; } }
+        /* line 191, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+        #global-header .header-proposition #proposition-links li a {
+          color: white;
+          text-decoration: none;
+          font-family: "nta", Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.42857;
+          font-weight: 400;
+          text-transform: none;
+          font-weight: 700; }
+          @media (max-width: 640px) {
+            /* line 191, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+            #global-header .header-proposition #proposition-links li a {
+              font-size: 12px;
+              line-height: 1.25; } }
+          @media (min-width: 769px) {
+            /* line 191, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+            #global-header .header-proposition #proposition-links li a {
+              font-family: "nta", Arial, sans-serif;
+              font-size: 16px;
+              line-height: 1.25;
+              font-weight: 300;
+              text-transform: none;
+              font-weight: 700;
+              line-height: 23px; } }
+            @media (min-width: 769px) and (max-width: 640px) {
+              /* line 191, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+              #global-header .header-proposition #proposition-links li a {
+                font-size: 14px;
+                line-height: 1.14286; } }
+          /* line 201, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+          #global-header .header-proposition #proposition-links li a:hover {
+            text-decoration: underline; }
+          /* line 204, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+          #global-header .header-proposition #proposition-links li a.active {
+            color: #28a197; }
+
+/* Global cookie message */
+/* line 215, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+.js-enabled #global-cookie-message {
+  display: none;
+  /* shown with JS, always on for non-JS */ }
+
+/* line 219, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+#global-cookie-message {
+  padding: 0.5em 2em;
+  background-color: #d5e8f3; }
+  /* line 223, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+  #global-cookie-message p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    margin: 0 auto;
+    max-width: 960px; }
+    @media (max-width: 640px) {
+      /* line 223, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+      #global-cookie-message p {
+        font-size: 16px;
+        line-height: 1.25; } }
+  @media (max-width: 640px) {
+    /* line 219, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/_header.scss */
+    #global-cookie-message {
+      padding: 0.5em 1em; } }
+
+/* ------------------------------------
+ general 
+------------------------------------ */
+/* line 16, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#content {
+  margin: 0 auto;
+  max-width: 1020px;
+  position: relative; }
+
+/* line 21, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.group article {
+  margin-bottom: 4em; }
+
+/* line 24, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article {
+  margin-right: 0; }
+
+/* line 27, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .inner {
+  margin: 0; }
+
+@media (min-width: 641px) {
+  /* line 32, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  article .inner {
+    width: 66.7%;
+    margin: 0; } }
+/* line 37, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.view-driving-licence {
+  padding: 0 32px; }
+
+@media (max-width: 640px) {
+  /* line 41, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .view-driving-licence {
+    padding: 0 1em; } }
+/* line 45, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .content {
+  padding: 0 32px;
+  width: 80%; }
+
+@media (max-width: 640px) {
+  /* line 50, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  article .content {
+    padding: 0 1em; } }
+/* line 55, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+header.page-header div {
+  position: relative;
+  margin-right: 0;
+  padding: 1em; }
+
+@media (min-width: 641px) {
+  /* line 61, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  header.page-header div {
+    margin-right: 0;
+    padding: 1em  2em; } }
+/* line 66, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+header h1 {
+  float: left;
+  width: 80%; }
+
+/* line 71, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.hgroup {
+  zoom: 1; }
+
+/* line 75, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.logout-btn-wrap {
+  float: right;
+  text-align: right;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 75, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .logout-btn-wrap {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+/* line 81, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.logout-btn-wrap a {
+  margin-top: 2.5em;
+  white-space: nowrap; }
+
+@media (max-width: 640px) {
+  /* line 87, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .hgroup {
+    position: relative; }
+
+  /* line 90, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .logout-btn-wrap a {
+    position: absolute;
+    top: 1em;
+    right: 1em; } }
+@media (min-width: 641px) {
+  /* line 97, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .hgroup h1 {
+    white-space: nowrap; } }
+/*
+.header-wrap {
+  float: left;
+  width: 100%;
+}
+header {
+   margin: 0 10.5em 0 0;
+   float: left;
+
+}
+.hgroup {
+  float: left;
+
+}
+.logout-btn-wrap {
+  float: right;
+  width: 10em;
+  margin-left: -10em;
+  text-align: right;
+}
+/* ------------------------------------
+BETA styles 
+------------------------------------ */
+/* line 124, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#global-header.with-proposition #proposition-name small {
+  display: inline-block;
+  background: #f47738;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 4px 5px 0px 6px;
+  margin-left: 1em;
+  vertical-align: middle; }
+  @media (max-width: 640px) {
+    /* line 124, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    #global-header.with-proposition #proposition-name small {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 136, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.beta-warning {
+  max-width: 1020px;
+  margin: 0 auto;
+  background: #f47738; }
+
+/* line 141, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.beta-warning p {
+  padding: 8px 1em;
+  margin: 0; }
+
+@media (min-width: 641px) {
+  /* line 146, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .beta-warning p {
+    padding: 8px 32px; } }
+/* line 150, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.beta-warning a {
+  color: #0b0c0c; }
+
+/* line 153, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.page-header .beta {
+  display: inline-block;
+  background: #f47738;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 4px 5px 0px 6px;
+  vertical-align: middle;
+  margin-left: 1em; }
+  @media (max-width: 640px) {
+    /* line 153, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .page-header .beta {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* ------------------------------------
+ Login 
+------------------------------------ */
+/* line 168, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.login-form {
+  padding: 0 32px;
+  width: 80%; }
+
+@media (max-width: 640px) {
+  /* line 174, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .login-form {
+    padding: 0 1em; } }
+/* line 181, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.login-form label {
+  display: block; }
+
+/* line 184, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.login-form input {
+  margin-left: 0;
+  /*margin-bottom: 1.2em;*/ }
+
+/* line 188, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.login-form .input-lg {
+  width: 20em; }
+
+/* line 191, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.login-form .input-sm {
+  width: 5em; }
+
+@media (max-width: 640px) {
+  /* line 195, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .login-form input {
+    display: block;
+    margin-bottom: 7px; }
+
+  /* line 199, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .login-form .hint {
+    display: block;
+    margin-bottom: 1em; } }
+ /*
+.login-form button {
+   margin-bottom: 1.5em;
+}*/
+/* line 208, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+img#whatLicenceImg,
+img#whatIsNinoImg {
+  display: block;
+  padding-bottom: 2em; }
+
+/* ------------------------------------
+ Tabbed in page navigation 
+------------------------------------ */
+/* line 216, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.tabbed-view {
+  padding: 0 32px; }
+
+/* line 219, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.activity-navigation {
+  border-bottom: 1px solid #bfc1c3;
+  width: 100%;
+  margin: 0 -28px 2em;
+  padding: 0 28px; }
+
+@media (max-width: 910px) {
+  /* line 226, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation li a {
+    height: 2em; } }
+/* line 230, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.activity-navigation ul {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 236, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.activity-navigation li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 33.333%; }
+
+/* line 243, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.activity-navigation li a {
+  display: block;
+  /*line-height: 1.25em;*/
+  position: relative;
+  zoom: 1;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  padding: 15px 7px 15px 17px;
+  margin: 0 2px 4px;
+  background: #dee0e2;
+  color: #0b0c0c; }
+
+/* line 256, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.activity-navigation li a.current {
+  background: white;
+  color: #0b0c0c;
+  text-decoration: none;
+  margin-bottom: -1px;
+  padding: 15px 7px 19px 16px;
+  border: 1px solid #bfc1c3;
+  border-bottom: none;
+  overflow: visible; }
+
+/* line 266, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.activity-navigation li a:hover {
+  text-decoration: underline; }
+
+@media (max-width: 640px) {
+  /* line 271, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation {
+    border: none; }
+
+  /* line 274, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .tabbed-view {
+    padding: 0 1em; }
+
+  /* line 277, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation {
+    margin-bottom: 2em; }
+
+  /* line 280, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation ul {
+    border-top: 1px solid #bfc1c3; }
+
+  /* line 283, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation li {
+    float: none;
+    width: 100%;
+    border: none;
+    padding: 0; }
+
+  /* line 289, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation li a {
+    border: none;
+    border-bottom: 1px solid #bfc1c3;
+    text-decoration: underline;
+    background: white;
+    padding: 7px 15px;
+    height: auto;
+    margin: 0;
+    color: #2e3191; }
+
+  /* line 299, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation li a.current {
+    border: none;
+    border-bottom: 1px solid #bfc1c3;
+    background: #dee0e2;
+    padding: 7px 15px;
+    margin: 0; }
+
+  /* line 307, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .activity-navigation li:focus {
+    border-top: 1px solid #ffbf47;
+    border-bottom: 1px solid #ffbf47; } }
+/* line 312, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.tabbed-view h2 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    /* line 312, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .tabbed-view h2 {
+      font-size: 18px;
+      line-height: 1.11111; } }
+
+/*
+@media (max-width: 470px) {
+  .page-header .logout {
+    margin: -3em 1em 1em;
+  }
+}
+@media (min-width: 471px) and (max-width: 639px) {
+  .page-header .logout {
+    position: absolute;
+    top: 3em; 
+    right: 1em;
+  }
+}
+.page-header .logout {
+  position: absolute;
+  top: 3.75em; 
+  right: 32px;
+}
+
+/* --------------------------------
+Your details
+----------------------------------*/
+/* line 337, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details h3 {
+  margin-right: 30px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 337, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    #your-details h3 {
+      font-size: 20px;
+      line-height: 1.2; } }
+
+/* line 341, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl {
+  zoom: 1;
+  margin-bottom: 2em; }
+
+/* line 346, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl dt {
+  float: left;
+  width: 40%;
+  min-width: 180px; }
+
+/* line 351, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl dd {
+  float: left;
+  width: 60%;
+  margin-left: 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    /* line 351, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    #your-details dl dd {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+@media (max-width: 496px) {
+  /* line 358, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #your-details dl dd {
+    width: 100%;
+    margin-bottom: 0.75em; } }
+@media (min-width: 641px) {
+  /* line 364, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #your-details dl dt {
+    clear: left;
+    width: auto;
+    min-width: 200px;
+    padding-right: 10px; }
+
+  /* line 370, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #your-details dl dd {
+    clear: right; } }
+/* line 375, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl dt.name,
+#your-details dl dd.name {
+  display: block;
+  float: none;
+  margin-bottom: 0; }
+
+/*
+#your-details dl dd span{
+  padding-right: 1em;
+}*/
+/* line 384, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl dd .postcode {
+  white-space: nowrap; }
+
+/* line 387, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl dd a {
+  font-weight: normal; }
+
+/* line 390, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#your-details dl dd.name {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  margin: 0 0 0.75em; }
+  @media (max-width: 640px) {
+    /* line 390, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    #your-details dl dd.name {
+      font-size: 18px;
+      line-height: 1.11111; } }
+
+/* --------------------------------
+Pens and Disq
+----------------------------------*/
+/* line 397, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+h2 span {
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  display: block; }
+  @media (max-width: 640px) {
+    /* line 397, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    h2 span {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+/* line 402, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+p.footnote {
+  margin-top: 2em; }
+
+/*-------------------------------------
+Accordion styles
+-------------------------------------*/
+/* line 408, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion h4 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.75em; }
+  @media (max-width: 640px) {
+    /* line 408, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .accordion h4 {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 417, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion,
+.accordion ol,
+.accordion ul,
+.accordion ol li,
+.accordion ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 417, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .accordion,
+    .accordion ol,
+    .accordion ul,
+    .accordion ol li,
+    .accordion ul li {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 423, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion > li {
+  background: white;
+  margin: 0 0 14px;
+  padding: 0;
+  border: 1px solid #2e358b;
+  list-style-image: none;
+  zoom: 1;
+  clear: both; }
+
+/* line 433, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion p {
+  margin: 0.75em 0;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 433, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .accordion p {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 437, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion p + h4 {
+  margin-top: 1.25em; }
+
+/* line 440, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion {
+  margin-bottom: 2em;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 440, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .accordion {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 444, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content {
+  border-top: 1px solid #dee0e2;
+  display: block;
+  padding: 15px;
+  zoom: 1; }
+
+/* line 451, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content .description {
+  width: 66.66667%;
+  float: left; }
+
+/* line 455, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content .description p {
+  margin-right: 1em; }
+
+/* line 458, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content .restriction {
+  width: 33.33333%;
+  float: left; }
+
+/* line 463, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .grid ul,
+article .grid ol {
+  list-style-image: none;
+  padding-left: 0;
+  list-style-position: outside; }
+
+/* line 468, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content .grid-3 > li {
+  width: 33.33333%;
+  float: left; }
+
+/* line 472, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content .grid-4 > li {
+  width: 25%;
+  float: left; }
+
+@media (max-width: 767px) {
+  /* line 478, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .accordion-content .grid-3 > li,
+  .accordion-content .grid-4 > li {
+    width: 50%;
+    float: left; }
+
+  /* line 483, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .accordion-content .grid-3 > li:nth-child(3),
+  .accordion-content .grid-4 > li:nth-child(3) {
+    clear: left;
+    /*padding-top: 15px;*/ }
+
+  /* line 488, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .disqualifications .dates,
+  .disqualifications .details {
+    min-height: 10em; } }
+/* line 496, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content .grid-3 li p,
+.accordion-content .grid-3 li ul,
+.accordion-content .grid-4 li p,
+.accordion-content .grid-4 li ul {
+  padding-right: 10px; }
+
+/* line 500, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-group a {
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
+  zoom: 1; }
+
+/* line 507, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.detail-wrapper {
+  float: left;
+  width: 100%; }
+
+/* line 511, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.detail-col {
+  margin: 0 10.5em 0 60px; }
+
+/* line 515, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.detail-col-noimage {
+  margin: 0 10.5em 0 0px; }
+
+/* line 519, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.img-holder {
+  float: left;
+  width: 60px;
+  margin-left: -100%; }
+
+/* line 524, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.img-holder img {
+  width: 48px;
+  margin: 0;
+  padding-top: 10px; }
+
+/* line 529, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+ul.detail {
+  padding: 16px 0;
+  zoom: 1; }
+  /* line 533, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  ul.detail li {
+    float: left;
+    padding-right: 10px; }
+  /* line 537, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  ul.detail li.category {
+    font-weight: 700; }
+
+/* line 541, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.more {
+  float: left;
+  width: 10em;
+  margin-left: -10em;
+  text-align: right;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  padding: 16px 0; }
+  @media (max-width: 640px) {
+    /* line 541, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .more {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 550, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-group em {
+  font-style: normal;
+  white-space: nowrap; }
+/* line 554, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-group em img {
+  margin-bottom: -2px; }
+
+/* line 558, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content li.valid-dates {
+  display: none; }
+
+/* line 562, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#points .detail-col {
+  margin: 0 10.5em 0 0; }
+/* line 565, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#points ul.detail {
+  float: left; }
+/* line 568, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+#points .more {
+  float: right; }
+
+@media (max-width: 640px) {
+  /* line 573, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .detail-col {
+    margin: 0 9em 0 0; }
+
+  /* line 576, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .img-holder {
+    display: none; }
+
+  /* line 579, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .accordion-content .grid > li {
+    width: 100% !important;
+    margin-bottom: 1.5em; }
+
+  /* line 592, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #vehicles .accordion-group .category-img,
+  #vehicles .accordion-group .detail .category-img,
+  #vehicles .accordion-group .detail .valid-dates,
+  #vehicles .accordion-group .detail .restriction,
+  #points .accordion-group .detail .points,
+  #points .accordion-group .detail .offence-date,
+  #points .accordion-group .detail .period,
+  #points .accordion-group .detail .start,
+  #points .accordion-group .detail .end,
+  #points .accordion-group .detail span:nth-child(n+2) {
+    display: none; }
+
+  /* line 595, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #vehicles .accordion-group .detail span:nth-child(2) {
+    display: block; }
+
+  /* line 598, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .more {
+    width: 9em;
+    margin-left: -9em; }
+
+  /* line 602, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .accordion-group em img {
+    margin-bottom: -4px; }
+
+  /* line 605, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .accordion-content li.valid-dates {
+    display: block; } }
+/* line 609, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.accordion-content ul.drive {
+  zoom: 1; }
+
+/*---------------------------
+Forms
+---------------------------*/
+/* line 616, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+label {
+  display: block; }
+
+/* line 619, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.hint {
+  clear: left;
+  display: block;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  height: 1.25em; }
+  @media (max-width: 640px) {
+    /* line 619, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .hint {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 625, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.inline.hint {
+  clear: none;
+  display: inline-block; }
+
+/* line 630, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.inline .group,
+.inline label {
+  float: left;
+  margin-top: 0;
+  width: auto; }
+
+/* line 635, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.inline legend {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 635, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .inline legend {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+/* line 638, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.inline select {
+  margin-right: 10px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 638, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .inline select {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+/* line 642, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.inline label {
+  margin-right: 1em; }
+
+/* line 645, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary {
+  border: 3px solid #df3034;
+  box-sizing: border-box;
+  padding: 1em 1em 0.25em 1em;
+  margin: 1em -1em 1.5em -1em;
+  background-color: #fef7f7; }
+
+/* line 652, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary *:first-child {
+  margin-top: 0em; }
+
+/* line 656, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary ul,
+.validation-summary ol {
+  color: #df3034; }
+
+/* line 659, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary ol {
+  padding-left: 1.5em; }
+
+/* line 662, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 662, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .validation-summary li {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 665, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary a {
+  color: #df3034;
+  text-decoration: none; }
+
+/* line 669, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation-summary a:hover {
+  text-decoration: underline; }
+
+/* line 672, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation {
+  background-color: #fef7f7;
+  border-left: 3px solid #df3034;
+  margin: 0 -1em 0.5em -1em;
+  padding: 0.75em 1em 1em 1em; }
+
+/* line 678, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.validation .validation-message {
+  color: #df3034;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  display: block;
+  padding-bottom: 0.5em; }
+  @media (max-width: 640px) {
+    /* line 678, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .validation .validation-message {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+/* line 684, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .help-notice p.adr {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    /* line 684, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    article .help-notice p.adr {
+      font-size: 16px;
+      line-height: 1.25; } }
+
+/* Form inline */
+/* line 688, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form {
+  padding: 0 32px; }
+
+@media (max-width: 640px) {
+  /* line 692, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .kana-form {
+    padding: 0 1em; } }
+/* line 696, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.form-inline label {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+  display: inline-block;
+  padding: 0.25em 0; }
+
+/* line 703, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form textarea {
+  width: 100%;
+  height: 5em; }
+
+/* line 707, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form fieldset {
+  margin-bottom: 30px;
+  width: 66.7%; }
+
+@media (min-width: 1200px) {
+  /* line 713, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  .kana-form legend {
+    margin-bottom: 0.5em; } }
+/* line 717, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form legend {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    /* line 717, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+    .kana-form legend {
+      font-size: 20px;
+      line-height: 1.2; } }
+
+/* line 721, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form .input-lg {
+  width: 45%; }
+
+/* line 724, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form .input-sm {
+  width: 20%; }
+
+/* line 727, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form .action {
+  margin-left: 50%; }
+
+/* line 730, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.kana-form .action .button {
+  margin-left: 0.5em; }
+
+/* AG23: Missing elements below */
+/* line 735, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.hide {
+  display: none; }
+
+/* line 739, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.alert {
+  color: #c09853;
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  border-radius: 4px; }
+
+/* line 749, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.button-disabled, .button-disabled:hover {
+  background-color: #96aca9 !important; }
+
+/* line 753, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+form section {
+  font-size: 19px; }
+
+@media (max-width: 640px) {
+  /* line 758, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #content .more-info > ul.dln-help {
+    top: 2em;
+    left: 0em; }
+
+  /* line 763, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #content .more-info > ul.nino-help {
+    top: 2em;
+    left: 0em; } }
+@media (min-width: 641px) {
+  /* line 770, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #content .more-info > ul.dln-help {
+    top: 2em;
+    left: -4em; }
+
+  /* line 775, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #content .more-info > ul.nino-help {
+    top: 2em;
+    left: -4em; } }
+@media (min-width: 769px) {
+  /* line 782, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #content .more-info > ul.dln-help {
+    top: 0em;
+    left: 10em; }
+
+  /* line 787, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+  #content .more-info > ul.nino-help {
+    top: -4em;
+    left: 10em; } }
+/* line 794, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.entitlementHeader {
+  font-weight: bold; }
+
+/* line 798, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.dwp-permission-group {
+  background-color: #D5E8F3;
+  padding: 19px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #CBCBCB;
+  border-style: solid;
+  margin: 0.5em 0 0 0; }
+
+/* line 808, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .group {
+  margin: 5px 0 0 0; }
+
+/* line 812, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .error {
+  border-width: 0;
+  border-left: 3px solid #B94A48;
+  background-color: transparent; }
+
+/* line 818, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .error legend, article .error label {
+  color: #000000; }
+
+/* line 822, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+article .error input, article .error textarea {
+  color: #B94A48; }
+
+/* line 826, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.nino-help, .dln-help {
+  color: black; }
+
+/* line 830, /var/lib/jenkins/workspace/Production_Build_and_Test/iep-customer-portal/app/assets/application.scss */
+.group label {
+  font-size: 19px; }

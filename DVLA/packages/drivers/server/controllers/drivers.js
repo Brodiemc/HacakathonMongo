@@ -45,13 +45,32 @@ exports.driverLink = function(req, res) {
 	
 	Driver.load(req.params.driverId, function(err, driver) {
 		var vinnumbers = driver.VINNumbers + ' ' + req.params.VIN;
-		Driver.update(
-		    {currentDriverNumber: req.params.driverId}
-		  , { $set: {'VINNumbers': vinnumbers.trim()}}
-		  , function(error, result) {
-		      renderData("Success", res);
-		    }
-		);
+		console.log(req.params.VIN);
+		Vehicle.loadVIN(req.params.VIN, function(err, vehicle) {
+			if (vehicle != null){
+				console.log(vehicle.FirstName);
+				console.log(driver.FirstName);
+				console.log(vehicle.LastName);
+				console.log(driver.LastName);
+				console.log(vehicle.FirstName == driver.FirstName && vehicle.LastName == driver.LastName)
+			if (vehicle.FirstName == driver.FirstName && vehicle.LastName == driver.LastName) {
+				console.log('got some more');
+				Driver.update(
+		  	  	  {currentDriverNumber: req.params.driverId}
+		 	 	 , { $set: {'VINNumbers': vinnumbers.trim()}}
+		  		 , function(error, result) {
+		  			 res.json("Success");
+		 	   	}
+				);
+			}
+			else {
+				res.json("Failed");
+			}
+		}
+		else {
+			rres.json("Failed");
+		}
+		});
 	});
 	
 };

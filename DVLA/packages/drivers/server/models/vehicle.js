@@ -15,6 +15,16 @@ var VehicleSchema = new Schema({
     type: String,
     required: true,
     trim: true
+  },
+  FirstName: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  LastName: {
+    type: String,
+    required: true,
+    trim: true
   }
 },
   {collection: 'vehicle'});

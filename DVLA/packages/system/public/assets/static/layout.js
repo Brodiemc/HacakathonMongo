@@ -4,7 +4,8 @@
 	
 			
 		//var obj = jQuery.parseJSON( data );
-
+		
+		if (getParameterByName ( "customerName" ) == "") {
 		$.getJSON( "http://localhost:9000/drivers/" + getParameterByName ( "dln" ), function( data2 ) {
 			//console.log(data);
 			//var obj = jQuery.parseJSON( data );
@@ -20,6 +21,24 @@
 			
 			
 		});
+		}
+		else {
+		$.getJSON( "http://localhost:9000/driversSearch/" + getParameterByName ( "customerName" ), function( data2 ) {
+			//console.log(data);
+			//var obj = jQuery.parseJSON( data );
+			
+			test ( data2 );
+	
+			var div = document.getElementById('vehiclediv');
+		
+			var htmlString = buildVehiclediv ( data2 );
+
+			div.innerHTML = htmlString;
+			
+			
+			
+		});
+		}
 		
 	}
 	function test ( data )

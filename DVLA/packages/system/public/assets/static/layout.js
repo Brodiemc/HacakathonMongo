@@ -105,14 +105,14 @@
 			var mot = Math.floor(Math.random() * 3) + 1;
 			if(tax == 1){
 				items.push ('<div class="col-md-4 isValidTax">? Taxed</div>');
-			}else if(tax == 2)
+			}else if(tax == 2){
 				items.push ('<div class="col-md-4 isInvalidTax">? Taxed</div>');
 			}else if(tax ==3){
 				items.push ('<div class="col-md-4 isSoonTax">! Taxed</div>');
 			}
 			if(mot == 1){
 				items.push ('<div class="col-md-4 isValidMot">? MOT</div>');
-			}else if(mot == 2)
+			}else if(mot == 2){
 				items.push ('<div class="col-md-4 isInvalidMot">? MOT</div>');
 			}else if(mot ==3){
 				items.push ('<div class="col-md-4 isSoonMot">! MOT</div>');

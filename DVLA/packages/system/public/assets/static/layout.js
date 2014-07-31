@@ -69,7 +69,9 @@
 		var items = new Array ( );
 		if ( obj[1].vehicle[0] )
 		{
+		
 			items.push ( buildTopDiv ( obj ) );
+			items.push ('<div class="panel-group" id="accordion">');
 			for ( var i = 0; i < obj[1].vehicle.length;i++)
 			{
 				items.push ( buildVehicleData ( obj,i ) );
@@ -101,7 +103,7 @@
 		var items = new Array ( );
 		
 		
-		items.push ('<div class="panel-group" id="accordion">');
+	
  items.push (' <div class="panel panel-default">');
     items.push ('<div class="panel-heading">');
      items.push (' <h4 class="panel-title">');
